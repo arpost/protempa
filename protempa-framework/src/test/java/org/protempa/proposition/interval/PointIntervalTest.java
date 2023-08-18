@@ -50,7 +50,7 @@ public class PointIntervalTest extends TestCase {
 
     @Override
     protected void setUp() throws Exception {
-        Date d = DATE_FORMAT.parse("3/2/07 3:11 am");
+        Date d = DATE_FORMAT.parse("3/2/07, 3:11 am");
         this.interval = new SimpleInterval(
                 AbsoluteTimeGranularityUtil.asPosition(d),
                 AbsoluteTimeGranularity.MINUTE);

@@ -22,6 +22,8 @@ package org.protempa.proposition.value;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
+
 import junit.framework.TestCase;
 
 /**

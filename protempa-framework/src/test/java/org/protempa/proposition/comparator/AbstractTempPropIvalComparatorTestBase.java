@@ -22,6 +22,8 @@ package org.protempa.proposition.comparator;
 import java.util.Calendar;
 import java.util.Comparator;
 import java.util.Date;
+import java.util.TimeZone;
+
 import org.protempa.ProtempaTestCase;
 import org.protempa.proposition.Event;
 import org.protempa.proposition.TemporalProposition;
@@ -35,7 +37,7 @@ import org.protempa.proposition.value.AbsoluteTimeGranularity;
  * @author Andrew Post
  */
 abstract class AbstractTempPropIvalComparatorTestBase extends ProtempaTestCase {
-    private static Calendar cal = Calendar.getInstance();
+    private static Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("EST"));
     private AbsoluteTimeIntervalFactory ivalFactory;
     private Comparator<? super TemporalProposition> comp;
 

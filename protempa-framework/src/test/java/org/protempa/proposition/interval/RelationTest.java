@@ -94,8 +94,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1157PMAnd1159PMZeroDaysApart() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:57 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:57 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -109,8 +109,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1157PMAnd1159PMEquals() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:57 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:57 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, twelveOhOne,
                 AbsoluteTimeGranularity.MINUTE);
@@ -125,8 +125,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1157PMAnd1159PMEquals2() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:57 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:57 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, twelveOhOne,
                 AbsoluteTimeGranularity.MINUTE);
@@ -139,8 +139,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1159PMAnd1200AMExactlyOneDayApart() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:00 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:00 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -154,8 +154,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1159PMAnd1259AMExactlyOneDayApart() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:59 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:59 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -169,8 +169,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1159PMAnd1201AMExactlyOneHourApart() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:01 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:01 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -184,8 +184,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1159PMAnd1259AMExactlyOneHourApart() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:59 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:59 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -200,8 +200,8 @@ public class RelationTest extends ProtempaTestCase {
 
     public void test1159PMAnd1AMExactlyOneHourApartFalse()
             throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 1:00 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 1:00 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -215,8 +215,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1159PMAnd1AMExactlyTwoHoursApart() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 1:00 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 1:00 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -230,8 +230,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1159PMAnd1200AMExactlyOneHourApart() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:00 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:00 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -246,8 +246,8 @@ public class RelationTest extends ProtempaTestCase {
 
     public void test1159PMAnd1200AMExactlyZeroHoursApart()
             throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:00 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:00 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -262,8 +262,8 @@ public class RelationTest extends ProtempaTestCase {
 
     public void test1159PMAnd1200AMExactlyTwoHoursApartFalse2()
             throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:00 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:00 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -277,8 +277,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void test1159PMAnd1201AMExactlyTwoHoursApart() throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:01 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:01 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -293,8 +293,8 @@ public class RelationTest extends ProtempaTestCase {
 
     public void test1159PMAnd1201AMExactlyOneMinuteApart()
             throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:01 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:01 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -309,8 +309,8 @@ public class RelationTest extends ProtempaTestCase {
 
     public void test1159PMAnd1201AMExactlyTwoMinutesApart()
             throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:01 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:01 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -325,8 +325,8 @@ public class RelationTest extends ProtempaTestCase {
 
     public void test1159PMAnd1201AMExactlyThreeMinutesApart()
             throws ParseException {
-        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07 11:59 pm"));
-        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07 12:01 am"));
+        Long elevenFiftyNine = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 11:59 pm"));
+        Long twelveOhOne = asPosition(DATE_TIME_FORMAT.parse("1/2/07, 12:01 am"));
         Interval i1 = intervalFactory.getInstance(elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE, elevenFiftyNine,
                 AbsoluteTimeGranularity.MINUTE);
@@ -341,8 +341,8 @@ public class RelationTest extends ProtempaTestCase {
 
     // Spring forward
     public void testSpringForwardMinutes() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("3/11/07 1:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("3/11/07 3:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("3/11/07, 1:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("3/11/07, 3:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -356,8 +356,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testSpringForwardMinutesFalse() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("3/11/07 1:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("3/11/07 3:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("3/11/07, 1:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("3/11/07, 3:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -371,8 +371,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testSpringForwardHours() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("3/11/07 1:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("3/11/07 3:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("3/11/07, 1:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("3/11/07, 3:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -386,8 +386,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testSpringForwardHoursFalse() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("3/11/07 1:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("3/11/07 3:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("3/11/07, 1:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("3/11/07, 3:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -402,8 +402,8 @@ public class RelationTest extends ProtempaTestCase {
 
     // Fall back
     public void testFallBackMinutes() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06 12:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 12:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -417,8 +417,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testFallBackMinutesFalse() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06 12:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 12:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -432,8 +432,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testFallBackHours() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06 12:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 12:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -447,8 +447,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testFallBackHoursFalse() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06 12:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 12:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -462,8 +462,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testFallBackHoursFalse2() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06 12:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 12:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/29/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -477,8 +477,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testOneHourApart() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -492,8 +492,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testOneHourApartFalse() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -507,8 +507,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testTwoHoursApart() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06 12:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 12:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -522,8 +522,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testTwoHoursApart2() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06 12:00 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 12:00 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -537,8 +537,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testTwoHoursApartFalse() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06 12:55 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 12:55 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -552,8 +552,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testTwoHoursApartFalse3() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06 12:01 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 12:01 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -567,8 +567,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testOneHourApartFalse2() throws ParseException {
-        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06 12:00 am"));
-        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long justBefore = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 12:00 am"));
+        Long justAfter = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(justBefore,
                 AbsoluteTimeGranularity.MINUTE, justBefore,
                 AbsoluteTimeGranularity.MINUTE);
@@ -734,7 +734,7 @@ public class RelationTest extends ProtempaTestCase {
             throws ParseException {
         TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                 DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03 8:43 AM",
+        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03, 8:43 AM",
                 new NumberValue(0.8), dbDataSourceType);
 
         TemporalEventFactory tf = new TemporalEventFactory(DATE_FORMAT,
@@ -750,7 +750,7 @@ public class RelationTest extends ProtempaTestCase {
             throws ParseException {
         TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                 DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03 8:43 AM",
+        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03, 8:43 AM",
                 new NumberValue(0.8), dbDataSourceType);
 
         TemporalEventFactory tf = new TemporalEventFactory(DATE_FORMAT,
@@ -766,7 +766,7 @@ public class RelationTest extends ProtempaTestCase {
             throws ParseException {
         TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                 DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03 8:43 AM",
+        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03, 8:43 AM",
                 new NumberValue(0.8), dbDataSourceType);
 
         TemporalEventFactory tf = new TemporalEventFactory(DATE_FORMAT,
@@ -782,7 +782,7 @@ public class RelationTest extends ProtempaTestCase {
             throws ParseException {
         TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                 DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03 8:43 AM",
+        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03, 8:43 AM",
                 new NumberValue(0.8), dbDataSourceType);
 
         TemporalEventFactory tf = new TemporalEventFactory(DATE_FORMAT,
@@ -798,7 +798,7 @@ public class RelationTest extends ProtempaTestCase {
             throws ParseException {
         TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                 DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03 8:43 AM",
+        PrimitiveParameter creat = ppf.getInstance("CREAT", "11/17/03, 8:43 AM",
                 new NumberValue(0.8), dbDataSourceType);
 
         TemporalEventFactory tf = new TemporalEventFactory(DATE_FORMAT,
@@ -815,8 +815,8 @@ public class RelationTest extends ProtempaTestCase {
         TemporalAbstractParameterFactory apf = new TemporalAbstractParameterFactory(
                 DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
 
-        AbstractParameter creat = apf.getInstance("CREAT", "11/17/03 8:43 AM",
-                "11/17/03 8:43 AM");
+        AbstractParameter creat = apf.getInstance("CREAT", "11/17/03, 8:43 AM",
+                "11/17/03, 8:43 AM");
 
         TemporalEventFactory tf = new TemporalEventFactory(DATE_FORMAT,
                 AbsoluteTimeGranularity.DAY, getUniqueIdFactory());
@@ -832,8 +832,8 @@ public class RelationTest extends ProtempaTestCase {
         TemporalAbstractParameterFactory apf = new TemporalAbstractParameterFactory(
                 DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
 
-        AbstractParameter creat = apf.getInstance("CREAT", "11/17/03 8:43 AM",
-                "11/18/03 8:43 AM");
+        AbstractParameter creat = apf.getInstance("CREAT", "11/17/03, 8:43 AM",
+                "11/18/03, 8:43 AM");
 
         TemporalEventFactory tf = new TemporalEventFactory(DATE_FORMAT,
                 AbsoluteTimeGranularity.DAY, getUniqueIdFactory());
@@ -851,9 +851,9 @@ public class RelationTest extends ProtempaTestCase {
         try {
             TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                     DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07 1:00 am",
+            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07, 1:00 am",
                     dbDataSourceType);
-            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07 1:59 am",
+            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07, 1:59 am",
                     dbDataSourceType);
             Relation r = new Relation(1, AbsoluteTimeUnit.HOUR, null, null,
                     null, null, null, null, null, null, null, null, null, null,
@@ -871,9 +871,9 @@ public class RelationTest extends ProtempaTestCase {
         try {
             TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                     DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07 1:00 am",
+            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07, 1:00 am",
                     dbDataSourceType);
-            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07 2:00 am",
+            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07, 2:00 am",
                     dbDataSourceType);
             Relation r = new Relation(1, AbsoluteTimeUnit.HOUR, null, null,
                     null, null, null, null, null, null, null, null, null, null,
@@ -891,9 +891,9 @@ public class RelationTest extends ProtempaTestCase {
         try {
             TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                     DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07 1:00 am",
+            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07, 1:00 am",
                     dbDataSourceType);
-            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07 2:00 am",
+            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07, 2:00 am",
                     dbDataSourceType);
             Relation r = new Relation(null, null, 1, AbsoluteTimeUnit.HOUR,
                     null, null, null, null, null, null, null, null, null, null,
@@ -911,9 +911,9 @@ public class RelationTest extends ProtempaTestCase {
         try {
             TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                     DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07 1:00 am",
+            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07, 1:00 am",
                     dbDataSourceType);
-            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07 2:01 am",
+            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07, 2:01 am",
                     dbDataSourceType);
             Relation r = new Relation(null, null, 1, AbsoluteTimeUnit.HOUR,
                     null, null, null, null, null, null, null, null, null, null,
@@ -931,9 +931,9 @@ public class RelationTest extends ProtempaTestCase {
         try {
             TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                     DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07 1:01 am",
+            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07, 1:01 am",
                     dbDataSourceType);
-            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07 2:00 am",
+            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07, 2:00 am",
                     dbDataSourceType);
             Relation r = new Relation(null, null, 1, AbsoluteTimeUnit.HOUR,
                     null, null, null, null, null, null, null, null, null, null,
@@ -951,9 +951,9 @@ public class RelationTest extends ProtempaTestCase {
         try {
             TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                     DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07 1:01 am",
+            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07, 1:01 am",
                     dbDataSourceType);
-            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07 2:59 am",
+            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07, 2:59 am",
                     dbDataSourceType);
             Relation r = new Relation(null, null, 1, AbsoluteTimeUnit.HOUR,
                     null, null, null, null, null, null, null, null, null, null,
@@ -971,9 +971,9 @@ public class RelationTest extends ProtempaTestCase {
         try {
             TemporalPrimitiveParameterFactory ppf = new TemporalPrimitiveParameterFactory(
                     DATE_TIME_FORMAT, AbsoluteTimeGranularity.MINUTE, getUniqueIdFactory());
-            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07 1:01 am",
+            PrimitiveParameter pp1 = ppf.getInstance("BLAH", "1/1/07, 1:01 am",
                     dbDataSourceType);
-            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07 3:00 am",
+            PrimitiveParameter pp2 = ppf.getInstance("BLAH", "1/1/07, 3:00 am",
                     dbDataSourceType);
             Relation r = new Relation(null, null, 1, AbsoluteTimeUnit.HOUR,
                     null, null, null, null, null, null, null, null, null, null,
@@ -985,8 +985,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testIsGreaterThanOrEqualToDuration() throws ParseException {
-        Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 1:00 am"));
-        Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 2:01 am"));
+        Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 1:00 am"));
+        Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 2:01 am"));
         Interval i1 = intervalFactory.getInstance(time1, AbsoluteTimeGranularity.MINUTE,
                 time1, AbsoluteTimeGranularity.MINUTE);
         Interval i2 = intervalFactory.getInstance(time2, AbsoluteTimeGranularity.MINUTE,
@@ -996,8 +996,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testIsLessThanOrEqualToDurationFalse() throws ParseException {
-        Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 1:00 am"));
-        Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 2:01 am"));
+        Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 1:00 am"));
+        Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 2:01 am"));
         Interval i1 = intervalFactory.getInstance(time1, AbsoluteTimeGranularity.MINUTE,
                 time1, AbsoluteTimeGranularity.MINUTE);
         Interval i2 = intervalFactory.getInstance(time2, AbsoluteTimeGranularity.MINUTE,
@@ -1007,8 +1007,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testIsGreaterThanOrEqualToDurationEqual() throws ParseException {
-        Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 1:00 am"));
-        Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 2:00 am"));
+        Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 1:00 am"));
+        Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(time1, AbsoluteTimeGranularity.MINUTE,
                 time1, AbsoluteTimeGranularity.MINUTE);
         Interval i2 = intervalFactory.getInstance(time2, AbsoluteTimeGranularity.MINUTE,
@@ -1018,8 +1018,8 @@ public class RelationTest extends ProtempaTestCase {
     }
 
     public void testIsLessThanOrEqualToDurationEqual() throws ParseException {
-        Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 1:00 am"));
-        Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 2:00 am"));
+        Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 1:00 am"));
+        Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(time1, AbsoluteTimeGranularity.MINUTE,
                 time1, AbsoluteTimeGranularity.MINUTE);
         Interval i2 = intervalFactory.getInstance(time2, AbsoluteTimeGranularity.MINUTE,
@@ -1033,8 +1033,8 @@ public class RelationTest extends ProtempaTestCase {
      */
     public void testIsLessThanOrEqualToDuration() {
         try {
-            Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 1:00 am"));
-            Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 1:59 am"));
+            Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 1:00 am"));
+            Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 1:59 am"));
             Interval i1 = intervalFactory.getInstance(time1,
                     AbsoluteTimeGranularity.MINUTE, time1,
                     AbsoluteTimeGranularity.MINUTE);
@@ -1053,8 +1053,8 @@ public class RelationTest extends ProtempaTestCase {
      */
     public void testIsGreaterThanOrEqualToDuration2() {
         try {
-            Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 1:00 am"));
-            Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07 1:59 am"));
+            Long time1 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 1:00 am"));
+            Long time2 = asPosition(DATE_TIME_FORMAT.parse("1/1/07, 1:59 am"));
             Interval i1 = intervalFactory.getInstance(time1,
                     AbsoluteTimeGranularity.MINUTE, time1,
                     AbsoluteTimeGranularity.MINUTE);
@@ -1211,10 +1211,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testMeets() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i1 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1225,10 +1225,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testMeetsFalse1() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:01 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:01 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i1 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1239,10 +1239,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testMeetsFalse2() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:01 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:01 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i2 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1253,8 +1253,8 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testMeetsFalse3() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Long start2 = asPosition(DATE_FORMAT.parse("10/28/06"));
         Long finish2 = asPosition(DATE_FORMAT.parse("10/28/06"));
         Interval i1 = intervalFactory.getInstance(start1,
@@ -1267,10 +1267,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testMeetsFalse4() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i2 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1281,10 +1281,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testMetBy() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i2 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1295,10 +1295,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testOverlaps() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i1 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1309,10 +1309,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testOverlapsFalse1() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i1 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1323,10 +1323,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testOverlapsFalse2() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i1 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1337,10 +1337,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testOverlapsFalse3() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 3:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 4:00 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 3:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 4:00 am"));
         Interval i1 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1351,10 +1351,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testOverlappedBy() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i2 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1365,10 +1365,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testOverlappedByFalse1() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:30 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:30 am"));
         Interval i1 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1379,10 +1379,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testOverlappedByFalse2() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
         Interval i2 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1393,10 +1393,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testOverlappedByFalse3() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 3:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 4:00 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 3:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 4:00 am"));
         Interval i2 = intervalFactory.getInstance(start1,
                 AbsoluteTimeGranularity.MINUTE, finish1,
                 AbsoluteTimeGranularity.MINUTE);
@@ -1407,10 +1407,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testContextRelation1() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 12:30 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 4:00 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 12:30 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 4:00 am"));
         Relation rel = new Relation(null, null, 0, null, null,
             null, null, null, null, null, null, null, 0, null, null, null);
         Interval i1 = intervalFactory.getInstance(start1,
@@ -1423,10 +1423,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testContextRelation2() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 4:00 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 4:00 am"));
         Relation rel = new Relation(null, null, 0, null, null,
             null, null, null, null, null, null, null, 0, null, null, null);
         Interval i1 = intervalFactory.getInstance(start1,
@@ -1439,10 +1439,10 @@ public class RelationTest extends ProtempaTestCase {
     }
     
     public void testContextRelationFalse1() throws ParseException {
-        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:00 am"));
-        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 2:00 am"));
-        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 1:01 am"));
-        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06 4:00 am"));
+        Long start1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:00 am"));
+        Long finish1 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 2:00 am"));
+        Long start2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 1:01 am"));
+        Long finish2 = asPosition(DATE_TIME_FORMAT.parse("10/28/06, 4:00 am"));
         Relation rel = new Relation(null, null, 0, null, null,
             null, null, null, null, null, null, null, 0, null, null, null);
         Interval i1 = intervalFactory.getInstance(start1,

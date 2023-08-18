@@ -8,7 +8,6 @@
         <version>5.1-Beta-2-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.eurekaclinical</groupId>
     <artifactId>protempa-bconfigs-ini4j-ini</artifactId>
     <packaging>jar</packaging>
     <name>Protempa Ini4j INI Backend Configurations</name>

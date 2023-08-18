@@ -25,6 +25,8 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.TimeZone;
+
 import org.drools.util.StringUtils;
 import org.junit.Assert;
 import org.junit.Test;

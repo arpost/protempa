@@ -21,6 +21,7 @@ package org.protempa.proposition;
 
 import org.protempa.proposition.interval.Interval;
 import java.util.Calendar;
+import java.util.TimeZone;
 
 import org.protempa.DataSourceBackendSourceSystem;
 import org.protempa.ProtempaTestCase;
@@ -39,7 +40,7 @@ public class PrimitiveParameterTest extends ProtempaTestCase {
     @Override
     protected void setUp() throws Exception {
         super.setUp();
-        Calendar cal = Calendar.getInstance();
+        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("EST"));
         cal.clear();
         cal.set(2007, Calendar.MARCH, 1, 15, 11);
 
@@ -90,7 +91,7 @@ public class PrimitiveParameterTest extends ProtempaTestCase {
         PrimitiveParameter p2 = new PrimitiveParameter("TEST", getUid());
         p2.setSourceSystem(DataSourceBackendSourceSystem.getInstance("TEST"));
         p2.setValue(new NumberValue(13));
-        Calendar cal = Calendar.getInstance();
+        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("EST"));
         cal.clear();
         cal.set(2007, Calendar.MARCH, 1, 15, 11);
         p2.setPosition(asPosition(cal.getTime()));
@@ -102,7 +103,7 @@ public class PrimitiveParameterTest extends ProtempaTestCase {
         PrimitiveParameter p2 = new PrimitiveParameter("TEST2", getUid());
         p2.setSourceSystem(DataSourceBackendSourceSystem.getInstance("TEST"));
         p2.setValue(new NumberValue(13));
-        Calendar cal = Calendar.getInstance();
+        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("EST"));
         cal.clear();
         cal.set(2007, Calendar.MARCH, 1, 15, 11);
         p2.setPosition(asPosition(cal.getTime()));
@@ -114,7 +115,7 @@ public class PrimitiveParameterTest extends ProtempaTestCase {
         PrimitiveParameter p2 = new PrimitiveParameter("TEST2", getUid());
         p2.setSourceSystem(DataSourceBackendSourceSystem.getInstance("TEST"));
         p2.setValue(new NumberValue(13));
-        Calendar cal = Calendar.getInstance();
+        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("EST"));
         cal.clear();
         cal.set(2007, Calendar.MARCH, 1, 15, 12);
         p2.setPosition(asPosition(cal.getTime()));
@@ -126,7 +127,7 @@ public class PrimitiveParameterTest extends ProtempaTestCase {
         PrimitiveParameter p2 = new PrimitiveParameter("TEST2", getUid());
         p2.setSourceSystem(DataSourceBackendSourceSystem.getInstance("TEST"));
         p2.setValue(new NumberValue(13));
-        Calendar cal = Calendar.getInstance();
+        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("EST"));
         cal.clear();
         cal.set(2007, Calendar.MARCH, 1, 15, 11);
         p2.setPosition(asPosition(cal.getTime()));

@@ -8,7 +8,6 @@
         <version>5.1-Beta-2-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.eurekaclinical</groupId>
     <artifactId>protempa-bcp-serviceloader</artifactId>
     <packaging>jar</packaging>
     <name>Protempa ServiceLoader Backend Configurations Provider</name>

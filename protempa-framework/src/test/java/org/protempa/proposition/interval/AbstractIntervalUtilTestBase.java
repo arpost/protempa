@@ -25,6 +25,8 @@ package org.protempa.proposition.interval;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
+
 import org.protempa.ProtempaTestCase;
 import org.protempa.proposition.value.AbsoluteTimeGranularity;
 import org.protempa.proposition.value.AbsoluteTimeUnit;
@@ -36,7 +38,7 @@ import org.protempa.proposition.value.AbsoluteTimeUnit;
 public abstract class AbstractIntervalUtilTestBase extends ProtempaTestCase {
     
     private AbsoluteTimeIntervalFactory ivalFactory;
-    private static final Calendar cal = Calendar.getInstance();
+    private static final Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("EST"));
 
     @Override
     protected void setUp() throws Exception {

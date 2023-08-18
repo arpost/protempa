@@ -61,7 +61,10 @@ public class JDBCDecimalDayParserTest {
     public void testDate() throws SQLException {
         ResultSet resultSet = new MockResultSet(20100723);
         JDBCPositionFormat pf = new JDBCDecimalDayParser();
-        Assert.assertEquals(Long.valueOf(1279857600000L), 
+        Calendar cal = Calendar.getInstance();
+        cal.clear();
+        cal.set(2010, Calendar.JULY, 23);
+        Assert.assertEquals(Long.valueOf(cal.getTimeInMillis()),
                 pf.toPosition(resultSet, 1, Types.INTEGER));
     }
 
@@ -74,7 +77,10 @@ public class JDBCDecimalDayParserTest {
     public void testDateAtYearBoundary() throws SQLException {
         ResultSet resultSet = new MockResultSet(20101223);
         JDBCPositionFormat pf = new JDBCDecimalDayParser();
-        Assert.assertEquals(Long.valueOf(1293080400000L), 
+        Calendar cal = Calendar.getInstance();
+        cal.clear();
+        cal.set(2010, Calendar.DECEMBER, 23);
+        Assert.assertEquals(Long.valueOf(cal.getTimeInMillis()),
                 pf.toPosition(resultSet, 1, Types.INTEGER));
     }
 

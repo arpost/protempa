@@ -8,7 +8,6 @@
         <version>5.1-Beta-2-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.eurekaclinical</groupId>
     <artifactId>protempa-dsb-relationaldb</artifactId>
     <packaging>jar</packaging>
 

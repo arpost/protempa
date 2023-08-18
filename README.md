@@ -1,5 +1,11 @@
 # Protempa
-[Department of Biomedical Informatics](http://bmi.emory.edu), [Emory University](http://www.emory.edu), Atlanta, GA
+[Andrew Post](http://www.andrewrpost.com), Salt Lake City, UT
+
+Derived from software previously developed by me and my team at
+* the [Department of Biomedical Informatics](http://bmi.emory.edu), [Emory University](http://www.emory.edu), Atlanta, GA and
+* the Department of Public Health Sciences, University of Virginia, Charlottesville, VA
+
+and during my PhD studies at the Department of Biomedical Informatics, University of Pittsburgh, Pittsburgh, PA
 
 ## What does it do?
 Protempa identifies temporal sequences in clinical data. It supports retrieving patient populations containing sequences of interest from clinical datasets and databases in support of clinical research, outcomes studies and quality improvement. It provides for portability across data sources, and the creation of libraries of temporal sequence definitions and time series data processing algorithms.
@@ -217,4 +223,4 @@ targetTable = EUREKAPHENOTYPEONTOLOGY
 * `protempa-bconfigs-ini4j-ini`: [Javadoc for latest development release](http://javadoc.io/doc/org.eurekaclinical/protempa-bconfigs-ini4j-ini) [![Javadocs](http://javadoc.io/badge/org.eurekaclinical/protempa-bconfigs-ini4j-ini.svg)](http://javadoc.io/doc/org.eurekaclinical/protempa-bconfigs-ini4j-ini)
 
 ## Getting help
-Feel free to contact us at help@eurekaclinical.org.
+Feel free to contact the author at andrew.post55@gmail.com.

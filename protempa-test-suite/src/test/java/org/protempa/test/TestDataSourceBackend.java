@@ -76,7 +76,7 @@ public final class TestDataSourceBackend extends RelationalDbDataSourceBackend {
             super.initialize(config);
             logger.log(Level.INFO, "Populating database");
             dataProvider = new XlsxDataProvider(new File("src/test/resources/dsb/sample-data.xlsx"));
-            inserter = new DataInserter("jdbc:h2:mem:test;INIT=RUNSCRIPT FROM 'src/test/resources/dsb/test-schema.sql';DB_CLOSE_DELAY=-1");
+            inserter = new DataInserter("jdbc:h2:mem:TEST;INIT=RUNSCRIPT FROM './src/test/resources/dsb/test-schema.sql'");
             inserter.insertPatients(dataProvider.getPatients());
             inserter.insertEncounters(dataProvider.getEncounters());
             inserter.insertProviders(dataProvider.getProviders());
@@ -92,14 +92,17 @@ public final class TestDataSourceBackend extends RelationalDbDataSourceBackend {
 
     @Override
     public void close() throws BackendCloseException {
-        super.close();
+        BackendCloseException superException = null;
+        try {
+            super.close();
+        } catch (BackendCloseException ex) {
+            superException = ex;
+        }
         Exception exceptionToThrow = null;
         try {
             inserter.truncateTables();
         } catch (SQLException ex) {
-            if (exceptionToThrow == null) {
-                exceptionToThrow = ex;
-            }
+            exceptionToThrow = ex;
         }
 
         try {
@@ -111,7 +114,13 @@ public final class TestDataSourceBackend extends RelationalDbDataSourceBackend {
                 exceptionToThrow.addSuppressed(ex);
             }
         }
-        
+
+        if (superException != null) {
+            if (exceptionToThrow != null) {
+                superException.addSuppressed(exceptionToThrow);
+            }
+            throw superException;
+        }
         if (exceptionToThrow != null) {
             throw new BackendCloseException(exceptionToThrow);
         }

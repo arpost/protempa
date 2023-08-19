@@ -1,6 +1,6 @@
 [org.protempa.test.TestDataSourceBackend]
 dataSourceBackendId = Test
-databaseId = jdbc:h2:mem:test;DB_CLOSE_DELAY=-1
+databaseId = jdbc:h2:mem:TEST;DB_CLOSE_DELAY=-1;NON_KEYWORDS=value
 
 [org.protempa.backend.asb.java.JavaAlgorithmBackend]
 

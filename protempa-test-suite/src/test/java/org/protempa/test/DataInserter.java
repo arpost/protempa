@@ -39,14 +39,14 @@ import java.util.stream.Stream;
  */
 final class DataInserter {
 
-    private static final String PATIENT = "patient";
-    private static final String ENCOUNTER = "encounter";
-    private static final String PROVIDER = "provider";
-    private static final String ICD9D = "icd9d_event";
-    private static final String ICD9P = "icd9p_event";
-    private static final String LABS = "labs_event";
-    private static final String MEDS = "meds_event";
-    private static final String VITALS = "vitals_event";
+    private static final String PATIENT = "PATIENT";
+    private static final String ENCOUNTER = "ENCOUNTER";
+    private static final String PROVIDER = "PROVIDER";
+    private static final String ICD9D = "ICD9D_EVENT";
+    private static final String ICD9P = "ICD9P_EVENT";
+    private static final String LABS = "LABS_EVENT";
+    private static final String MEDS = "MEDS_EVENT";
+    private static final String VITALS = "VITALS_EVENT";
     private static final String SCHEMA = "TEST";
 
     private static final String TABLES[] = new String[]{PATIENT, ENCOUNTER,
@@ -81,26 +81,9 @@ final class DataInserter {
      * @throws SQLException Thrown if there are any JDBC errors.
      */
     void truncateTables() throws SQLException {
-        final List<String> sqlStatements = new ArrayList<>();
-        for (String table : TABLES) {
-            sqlStatements.add("truncate table " + table);
+        try (Statement statement = this.connection.createStatement()) {
+            statement.executeUpdate("drop schema " + SCHEMA + " cascade");
         }
-        sqlStatements.add("drop schema " + SCHEMA);
-
-        try {
-            for (String sql : sqlStatements) {
-                try (Statement statement = this.connection.createStatement()) {
-                    statement.executeUpdate(sql);
-                }
-            }
-            this.connection.commit();
-        } catch (SQLException ex) {
-            try {
-                this.connection.rollback();
-            } catch (SQLException ignore) {}
-            throw ex;
-        }
-
     }
 
     /**

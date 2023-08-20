@@ -32,6 +32,7 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -369,8 +370,8 @@ public class XlsxDataProvider implements DataProvider {
         String result;
         if (cell == null) {
             result = null;
-        } else if (cell.getCellType() != Cell.CELL_TYPE_STRING) {
-            if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
+        } else if (cell.getCellType() != CellType.STRING) {
+            if (cell.getCellType() == CellType.NUMERIC) {
                 result = String.valueOf(cell.getNumericCellValue());
             } else {
                 result = null;
@@ -391,7 +392,7 @@ public class XlsxDataProvider implements DataProvider {
         Long result;
         if (cell == null) {
             result = null;
-        } else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
+        } else if (cell.getCellType() == CellType.NUMERIC) {
             Double value = Double.valueOf(cell.getNumericCellValue());
             result = Long.valueOf(value.longValue());
         } else {
@@ -410,7 +411,7 @@ public class XlsxDataProvider implements DataProvider {
         Double result;
         if (cell == null) {
             result = null;
-        } else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
+        } else if (cell.getCellType() == CellType.NUMERIC) {
             double value = cell.getNumericCellValue();
             result = Double.valueOf(value);
         } else {
